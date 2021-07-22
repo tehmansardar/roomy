@@ -10,12 +10,14 @@ import React from 'react';
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
 import HomeScreen from './src/screens/Home';
+import Post from './src/components/Post';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <HomeScreen />
+        {/* <HomeScreen /> */}
+        <Post />
       </View>
     </SafeAreaView>
   );
