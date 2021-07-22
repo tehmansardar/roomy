@@ -11,7 +11,9 @@ import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
 // import HomeScreen from './src/screens/Home';
 // import Post from './src/components/Post';
-import SearchResultsScreen from './src/screens/SearchResutls';
+// import SearchResultsScreen from './src/screens/SearchResutls';
+import DestinationScreen from './src/screens/DestinationSearch';
+
 // import feed from './assets/data/feed';
 
 // const post1 = feed[0];
@@ -23,7 +25,8 @@ const App = () => {
       <View>
         {/* <HomeScreen /> */}
         {/* <Post post={post2} /> */}
-        <SearchResultsScreen />
+        {/* <SearchResultsScreen /> */}
+        <DestinationScreen />
       </View>
     </SafeAreaView>
   );
