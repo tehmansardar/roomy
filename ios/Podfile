@@ -16,6 +16,8 @@ target 'roomy' do
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
+  pod 'react-native-viewpager', :path => '../node_modules/@react-native-community/viewpager'
+
   target 'roomyTests' do
     inherit! :complete
     # Pods for testing
