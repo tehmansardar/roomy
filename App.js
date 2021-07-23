@@ -24,7 +24,7 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
+    backgroundColor: '#CCC',
     height: '100%',
   },
 });
