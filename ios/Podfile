@@ -4,6 +4,9 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '10.0'
 
 target 'roomy' do
+  # React Native Maps dependencies
+  rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', :path => rn_maps_path
   config = use_native_modules!
 
   use_react_native!(
@@ -17,6 +20,8 @@ target 'roomy' do
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
   pod 'react-native-viewpager', :path => '../node_modules/@react-native-community/viewpager'
+
+  pod 'react-native-maps', :path => '../node_modules/react-native-maps'
 
   target 'roomyTests' do
     inherit! :complete
