@@ -6,6 +6,8 @@ import places from '../../../assets/data/feed';
 
 import CustomMarker from '../../components/CustomMaker';
 
+import PostCarouselItem from '../../components/PostCarouselItem';
+
 const SearchResultsMap = () => {
   const [selectedPlaceId, setSelectPlaceId] = useState(null);
 
@@ -30,6 +32,9 @@ const SearchResultsMap = () => {
           />
         ))}
       </MapView>
+      <View style={{position: 'absolute', bottom: 40}}>
+        <PostCarouselItem post={places[0]} />
+      </View>
     </View>
   );
 };
