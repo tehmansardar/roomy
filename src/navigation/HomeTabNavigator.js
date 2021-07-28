@@ -11,6 +11,8 @@ import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import ExploreTabNavigator from './ExploreTabNavigator';
 import HomeScreen from '../screens/Home';
 
+import PostScreen from '../screens/Post';
+
 const Tab = createBottomTabNavigator();
 
 const HomeTabNavigator = () => {
