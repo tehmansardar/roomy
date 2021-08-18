@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-roomy-dev-41814-authRole",
+      "UnauthRoleArn": "arn:aws:iam::324111669692:role/amplify-roomy-dev-41814-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::324111669692:role/amplify-roomy-dev-41814-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-roomy-dev-41814-deployment",
+      "UnauthRoleName": "amplify-roomy-dev-41814-unauthRole",
+      "StackName": "amplify-roomy-dev-41814",
+      "StackId": "arn:aws:cloudformation:us-east-2:324111669692:stack/amplify-roomy-dev-41814/419cf900-fa31-11eb-989e-0a3b97bc0120",
+      "AmplifyAppId": "d27hw224r7ab5m"
+    },
+    "categories": {
+      "auth": {
+        "roomy1f94402c": {}
+      }
+    }
+  }
+}

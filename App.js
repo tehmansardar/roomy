@@ -10,6 +10,7 @@ import 'react-native-gesture-handler';
 
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+// import {withAuthenticator} from 'aws-amplify-react-native';
 
 import GuestsScreen from './src/screens/Guests';
 import Router from './src/navigation/Router';
@@ -29,4 +30,5 @@ const styles = StyleSheet.create({
   },
 });
 
+// export default withAuthenticator(App);
 export default App;
