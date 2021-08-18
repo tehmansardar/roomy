@@ -17,7 +17,8 @@ import CustomMarker from '../../components/CustomMaker';
 
 import PostCarouselItem from '../../components/PostCarouselItem';
 
-const SearchResultsMap = () => {
+const SearchResultsMap = props => {
+  const {guests} = props;
   const [posts, setPosts] = useState([]);
   const [selectedPlaceId, setSelectPlaceId] = useState(null);
 
@@ -55,7 +56,15 @@ const SearchResultsMap = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await API.graphql(graphqlOperation(listPosts));
+        const res = await API.graphql(
+          graphqlOperation(listPosts, {
+            filter: {
+              maxGuests: {
+                ge: guests,
+              },
+            },
+          }),
+        );
         setPosts(res.data.listPosts.items);
       } catch (error) {
         console.log(error);
